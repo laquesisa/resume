@@ -1,6 +1,5 @@
 import { Component, HostListener, AfterViewChecked } from '@angular/core';
 import { TranslateService } from './translate.service';
-import { TranslatePipe } from './translate.pipe';
 
 @Component({
   selector: 'app-root',
