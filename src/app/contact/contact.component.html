@@ -1,6 +1,6 @@
 <div id="contact">
   <p>
-    You're welcome to contact me (my email: {{email}}):
+    {{ 'CONTACTTEXT1' | translate }}
   </p>
   <p>
     <label>name:
@@ -8,6 +8,6 @@
     </label>
     <input type="submit" value="Send Mail" />
   </p>
-  <button mat-flat-button color="primary">Contact me</button>
-  <p>Find me on Linkedin and Github</p>
+  <button mat-flat-button color="primary">{{ 'CONTACTBUTTON' | translate }}</button>
+  <p>{{ 'CONTACTTEXT2' | translate }}</p>
 </div>
