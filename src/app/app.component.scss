@@ -1,0 +1,40 @@
+.aboutme {
+    background-color: rgb(10, 32, 19);
+}
+
+.content {
+    color: white;
+}
+
+.background {
+    background-image: url('../assets/background.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+.col-2 {
+    background-color: rgba(5, 4, 4, 0.829);
+    ul {
+        position: fixed;
+        top: 30vh;
+        color: white;
+        list-style: none;
+        li {
+            margin-top: 1em;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+li.active a {
+    text-decoration: underline;   
+}

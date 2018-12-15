@@ -1,58 +1,51 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<p>placeholder for a switch english/german site</p>
-<h1>
-  Welcome to my portfolio!
-</h1>
-<p>placeholder for a picture of myself</p>
-<h2>
-  - {{surname | uppercase}} {{lastname | uppercase}}
-  <br/> Student in computer science
-</h2>
-<h3>Switzerland</h3>
-<button mat-flat-button color="accent">Contact me</button>
-
-<h4>About me</h4>
-I'm a curious person who likes challenges in life, especially 
-small ones like a good old Sudoku or the zebra puzzle. My 
-friends and I often play board games or just hang out. I 
-devoted myself to art, creating digital drawings on my 
-own with a graphic tablet.
-
-<h4>My Timeline</h4>
-<ul>
-  <li>2011-2017: Gymnasium at KS Seetal</li>
-  <li>2015-2017: PowerUser at KS Seetal (Techsupport)</li>
-  <li>2017-Now: Student at FFHS in computer science & software engineer at swisscom
-    <ul>
-      <li>Aug17 - Jun18: NNI (RubyonRails - developed web application for automated network operations</li>
-      <li>Jun18 - Mar19: VicoTV (ReactNative - intrapreneur / projekt lead of an internal startup and frontend developer of an mobile application</li>
-    </ul>
-  </li>
-  <li>Hackathons
-    <ul>
-      <li>Aug18: Bern hackt</li>
-      <li>Okt18: HackUPC Barcelona</li>
-    </ul>
-  </li>
-</ul>
-
-<h4>Programming Skills</h4>
-<ul>
-  <li>HTML/CSS</li>
-  <li>Javascript</li>
-  <li>Ruby</li>
-  <li>Java</li>
-  <li>React</li>
-</ul>
-
-<h4>Tool Knowledge</h4>
-<ul>
-  <li>Windows</li>
-  <li>Linux</li>
-  <li>Git</li>
-  <li>Jira</li>
-  <li>Docker</li>
-</ul>
-<app-contact></app-contact>
-
-<p>this site was made with angular, sass, material</p>
+<div id="top-menu" class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <ul id="navigation" (scroll)="scrollHandler($event)">
+        <li [ngClass]="activeRoute=='top-menu' ? 'active' : ''">
+          <a (click)="active('top-menu')" href="#top-menu">Welcome</a>
+        </li>
+        <li [ngClass]="activeRoute=='aboutme' ? 'active' : ''">
+          <a (click)="active('aboutme')" href="#aboutme">About me</a>
+        </li>
+        <li [ngClass]="activeRoute=='mytimeline' ? 'active' : ''">
+          <a (click)="active('mytimeline')" href="#mytimeline">My Timeline</a>
+        </li>
+        <li [ngClass]="activeRoute=='programmingskills' ? 'active' : ''">
+          <a (click)="active('programmingskills')" href="#programmingskills">Programming Skills</a>
+        </li>
+        <li [ngClass]="activeRoute=='toolknowledge' ? 'active' : ''">
+          <a (click)="active('toolknowledge')" href="#toolknowledge">Tool Knowledge</a>
+        </li>
+        <li [ngClass]="activeRoute=='contact' ? 'active' : ''">
+          <a (click)="active('contact')" href="#contact">Contact me</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10" style="padding: 0;">
+      <div class="row, content">
+        <div parallax id="container" class="background">
+          <div class="layer">
+            <p>placeholder for a switch english/german site</p>
+            <h1>
+              Welcome to my portfolio!
+            </h1>
+            <p>placeholder for a picture of myself</p>
+            <h2>
+              - {{surname | uppercase}} {{lastname | uppercase}}
+              <br /> Student in computer science
+            </h2>
+            <h3>Switzerland</h3>
+            <button mat-flat-button color="accent">Contact me</button>
+            <app-aboutme></app-aboutme>
+            <app-mytimeline></app-mytimeline>
+            <app-programmingskills></app-programmingskills>
+            <app-toolknowledge></app-toolknowledge>
+            <app-contact></app-contact>
+            <p>this site was made with angular, scss, material</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
