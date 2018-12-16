@@ -33,5 +33,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 --> install ngx to be able to execute npm-packages
 
+### Problem with image rendering
+There's a known issue (https://github.com/angular/angular-cli/issues/9347) that the url to the images on the deployed github-page is wrong (the project-name is missed). Workaround: for deploy on gh-pages you should add the project-name into to url.
+
+src='../assets/images/img.png' -> src='../resume/assets/images/img.png'
+
 ## Timeline
 source: https://bootsnipp.com/snippets/Q0ppE
