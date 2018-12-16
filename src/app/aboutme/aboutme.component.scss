@@ -1,7 +1,14 @@
-.me {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    border-color: aliceblue;
-    width: 70vh;
-}
+figure{
+    width:200px; /*container-width*/
+    overflow: hidden; /*hide bounds of image */
+    margin:0 auto; /*reset margin of figure tag*/
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    float: right;
+ }
+
+ figure img{
+    display:block; /*remove inline-block spaces*/  
+    margin:0 -38.885%;
+    width:157.777%;
+ }

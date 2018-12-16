@@ -9,9 +9,10 @@ import { KnowHow } from './knowhow';
 export class ProgrammingskillsComponent implements OnInit {
 
   skills = [
-    new KnowHow('HTML/CSS', 100), 
-    new KnowHow('Java', 80), 
-    new KnowHow('Ruby, RubyOnRails', 60), 
+    new KnowHow('HTML, CSS, SCSS', 100), 
+    new KnowHow('Java', 80),
+    new KnowHow('MySQL', 80),
+    new KnowHow('Ruby, Ruby On Rails', 60), 
     new KnowHow('ReactJS, ReactNative', 60), 
     new KnowHow('Angular', 50)
   ];
