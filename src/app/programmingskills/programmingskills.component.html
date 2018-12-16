@@ -1,10 +1,11 @@
 <div id="programmingskills">
   <h4>{{ 'HEADER3' | translate }}</h4>
-  <ul>
-    <li>HTML/CSS</li>
-    <li>Javascript</li>
-    <li>Ruby</li>
-    <li>Java</li>
-    <li>React</li>
-  </ul>
+
+  <div *ngFor="let skill of skills">
+      <div class="skillbar">
+          <div class="skillbar-title">{{ skill.name }}</div>
+          <div class="skill-bar-percent">{{ skill.percent }}%</div>
+          <div class="skillbar-bar" [style.width.%]="skill.percent"></div>
+      </div>
+  </div>
 </div>

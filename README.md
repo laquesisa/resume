@@ -31,5 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `ngh`
 (https://alligator.io/angular/deploying-angular-app-github-pages/)
 
+--> install ngx to be able to execute npm-packages
+
 ## Timeline
 source: https://bootsnipp.com/snippets/Q0ppE

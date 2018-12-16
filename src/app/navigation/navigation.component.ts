@@ -29,7 +29,6 @@ export class NavigationComponent implements AfterViewChecked {
     let scrollE = this.scrollElements.toArray();
     for (let element of scrollE) {
       if (pageYOffset <= $($(element).attr('href'))[0].offsetTop) {
-        console.log(pageYOffset + '-' + $($(element).attr('href'))[0].offsetTop);
         this.active($(element).attr('href').slice(1, $(element).attr('href').length));
         break;
       }

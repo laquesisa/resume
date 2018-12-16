@@ -55,6 +55,21 @@ h1 {
 }
 
 h2 {
-    font-size: 800%;
+    font-size: 10vw;
     line-height: 100%;
 }
+
+.siteinformation {
+    @extend %gray-background;
+    display: block;
+    padding: 2em;
+    text-align: center;
+}
+
+
+//Media queries at the end of the document
+@media only screen and (max-width: 600px) {
+    .layer {
+      padding: 2em 2em;
+    }
+  }

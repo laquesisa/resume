@@ -1,10 +1,10 @@
 <div id="toolknowledge">
   <h4>{{ 'HEADER4' | translate }}</h4>
-  <ul>
-    <li>Windows</li>
-    <li>Linux</li>
-    <li>Git</li>
-    <li>Jira</li>
-    <li>Docker</li>
-  </ul>
+  <div *ngFor="let tool of tools">
+      <div class="skillbar">
+          <div class="skillbar-title">{{ tool.name }}</div>
+          <div class="skill-bar-percent">{{ tool.percent }}%</div>
+          <div class="skillbar-bar" [style.width.%]="tool.percent"></div>
+      </div>
+  </div>
 </div>

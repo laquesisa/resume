@@ -3,12 +3,13 @@
     {{ 'CONTACTTEXT1' | translate }}
   </p>
   <p>
-    <mat-form-field color="accent">
-      <textarea matInput placeholder="Textarea" cols="70"></textarea>
-    </mat-form-field>
+    <a href="mailto:dana.shmaria@gmail.com">
+      <button mat-flat-button color="accent">{{ 'CONTACTBUTTON' | translate | uppercase }}</button>
+    </a>
   </p>
-  <p>
-    <button mat-flat-button color="accent">{{ 'CONTACTBUTTON' | translate }}</button>
+  <!--<p>{{ 'CONTACTTEXT2' | translate }}</p>-->
+  <p style="margin-top: 4em;">
+    <a href="https://www.linkedin.com/in/dana-s-021430152/"><img width="30px" src="../../assets/In-White-94px-TM.png" /></a>
+    <a href="https://github.com/laquesisa"><img width="30px" src="../../assets/GitHub-Mark-Light-64px.png" /></a>
   </p>
-  <p>{{ 'CONTACTTEXT2' | translate }}</p>
 </div>

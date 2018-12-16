@@ -8,7 +8,7 @@
         <div parallax id="container" class="background">
           <div class="layer">
             <div class="language-toggler">
-                {{ 'ENGLISH' | translate }}
+              {{ 'ENGLISH' | translate }}
               <mat-slide-toggle (click)="changeLang()">
                 {{ 'GERMAN' | translate }}
               </mat-slide-toggle>
@@ -20,22 +20,25 @@
               <h2 class="mat-h3">
                 {{surname | uppercase}} {{lastname | uppercase}}
               </h2>
-              <h3 class="mat-h3">{{ 'SUBTITLE' | translate }} 
+              <h3 class="mat-h3">{{ 'SUBTITLE' | translate }}
                 <br /> {{ 'COUNTRY' | translate }}</h3>
             </div>
+            <mat-divider class="margin"></mat-divider>
             <div class="information">
               <app-aboutme></app-aboutme>
-            <mat-divider class="margin"></mat-divider>
-            <app-mytimeline></app-mytimeline>
-            <mat-divider class="margin"></mat-divider>
-            <app-programmingskills></app-programmingskills>
-            <mat-divider class="margin"></mat-divider>
-            <app-toolknowledge></app-toolknowledge>
-            <mat-divider class="margin"></mat-divider>
-            <app-contact></app-contact>
-            <p class="mat-body">{{ 'SITEINFORMATION' | translate }}</p>
-            </div>            
+              <mat-divider class="margin"></mat-divider>
+              <app-mytimeline></app-mytimeline>
+              <mat-divider class="margin"></mat-divider>
+              <app-programmingskills></app-programmingskills>
+              <mat-divider class="margin"></mat-divider>
+              <app-toolknowledge></app-toolknowledge>
+              <mat-divider class="margin"></mat-divider>
+              <app-contact></app-contact>
+            </div>
           </div>
+          <div class="siteinformation">
+              <p class="mat-body">{{ 'SITEINFORMATION' | translate }}</p>
+            </div>
         </div>
       </div>
     </div>

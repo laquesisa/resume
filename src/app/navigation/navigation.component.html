@@ -1,20 +1,20 @@
 <ul id="navigation" (scroll)="scrollHandler($event)">
   <li [ngClass]="activeRoute=='top-menu' ? 'active' : ''">
-    <a (click)="active('top-menu')" href="#top-menu">Welcome</a>
+    <a (click)="active('top-menu')" href="#top-menu">Home</a>
   </li>
   <li [ngClass]="activeRoute=='aboutme' ? 'active' : ''">
-    <a (click)="active('aboutme')" href="#aboutme">About me</a>
+    <a (click)="active('aboutme')" href="#aboutme">{{ 'HEADER1' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='mytimeline' ? 'active' : ''">
-    <a (click)="active('mytimeline')" href="#mytimeline">My Timeline</a>
+    <a (click)="active('mytimeline')" href="#mytimeline">{{ 'HEADER2' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='programmingskills' ? 'active' : ''">
-    <a (click)="active('programmingskills')" href="#programmingskills">Programming Skills</a>
+    <a (click)="active('programmingskills')" href="#programmingskills">{{ 'HEADER3' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='toolknowledge' ? 'active' : ''">
-    <a (click)="active('toolknowledge')" href="#toolknowledge">Tool Knowledge</a>
+    <a (click)="active('toolknowledge')" href="#toolknowledge">{{ 'HEADER4' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='contact' ? 'active' : ''">
-    <a (click)="active('contact')" href="#contact">Contact me</a>
+    <a (click)="active('contact')" href="#contact">{{ 'CONTACTBUTTON' | translate }}</a>
   </li>
 </ul>
