@@ -8,7 +8,9 @@
     "TEXT1": "I'm a curious person who likes challenges in life, especially small ones like a good old Sudoku or the zebra puzzle. My friends and I often play board games or just hang out. I devoted myself to art, creating digital drawings on my own with a graphic tablet.",
     "HEADER2": "My Timeline",
     "TIMELINENODE1": "Gymnasium at KS Seetal",
+    "TIMELINENODE1-DESCRIPTION": "At this school I graduated with the focus on the subjects biology/chemistry and computer science.",
     "TIMELINENODE2": "PowerUser at KS Seetal (Techsupport)",
+    "TIMELINENODE2-DESCRIPTION": "My main task was the setup of starting an exam-evironment from a bootable stick on every students-laptop, as well as set up printing- and presenting-softwares. I supported the students in all of their questions belonging to tech.",
     "TIMELINENODE3": "Student at FFHS in computer science & software engineer at swisscom",
     "TIMELINENODE3.1": "NNI (RubyonRails - developed web application for automated network operations",
     "TIMELINENODE3.2": "VicoTV (ReactNative - intrapreneur / projekt lead of an internal startup and frontend developer of an mobile application",
@@ -18,7 +20,7 @@
     "HEADER3": "Programming Skills",
     "HEADER4": "Tool Knowledge",
     "CONTACTTEXT1": "You're welcome to contact me:",
-    "CONTACTBUTTON": "Contact me",
+    "CONTACTBUTTON": "Write an e-mail",
     "CONTACTTEXT2": "Find me on Linkedin and Github",
-    "SITEINFORMATION": "this site was made with angular, scss, material, bootstrap"
+    "SITEINFORMATION": "This site is made with Angular, SCSS, Material and Bootstrap"
   }

@@ -14,31 +14,30 @@
               </mat-slide-toggle>
             </div>
             <div class="landing">
-              <h1 class="mat-h2">
+              <h1 class="mat-h1">
                 {{ 'TITLE' | translate | uppercase }}
               </h1>
-              <h2 class="mat-h3">
+              <h2 class="mat-h2">
                 {{surname | uppercase}} {{lastname | uppercase}}
               </h2>
               <h3 class="mat-h3">{{ 'SUBTITLE' | translate }}
                 <br /> {{ 'COUNTRY' | translate }}</h3>
             </div>
-            <mat-divider class="margin"></mat-divider>
-            <div class="information">
-              <app-aboutme></app-aboutme>
-              <mat-divider class="margin"></mat-divider>
-              <app-mytimeline></app-mytimeline>
-              <mat-divider class="margin"></mat-divider>
-              <app-programmingskills></app-programmingskills>
-              <mat-divider class="margin"></mat-divider>
-              <app-toolknowledge></app-toolknowledge>
-              <mat-divider class="margin"></mat-divider>
-              <app-contact></app-contact>
-            </div>
           </div>
-          <div class="siteinformation">
+          <div class="information">
+            <app-aboutme></app-aboutme>
+            <mat-divider class="margin"></mat-divider>
+            <app-mytimeline></app-mytimeline>
+            <mat-divider class="margin"></mat-divider>
+            <app-programmingskills></app-programmingskills>
+            <mat-divider class="margin"></mat-divider>
+            <app-toolknowledge></app-toolknowledge>
+            <div class="margin"></div>
+            <app-contact></app-contact>
+            <div class="siteinformation">
               <p class="mat-body">{{ 'SITEINFORMATION' | translate }}</p>
             </div>
+          </div>
         </div>
       </div>
     </div>

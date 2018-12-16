@@ -27,8 +27,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Deploy on Github
-`ng build --prod --base-href “https://laquesisa.github.io/resume/”`
-`ngh`
+`ng build --prod --base-href "https://laquesisa.github.io/resume/"`
+`npx ngh`
 (https://alligator.io/angular/deploying-angular-app-github-pages/)
 
 --> install ngx to be able to execute npm-packages
