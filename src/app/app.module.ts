@@ -7,6 +7,11 @@ import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateService } from './translate.service';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 import * as $ from 'jquery';
 
@@ -18,6 +23,7 @@ import { MytimelineComponent } from './mytimeline/mytimeline.component';
 import { ProgrammingskillsComponent } from './programmingskills/programmingskills.component';
 import { ToolknowledgeComponent } from './toolknowledge/toolknowledge.component';
 import { TranslatePipe } from './translate.pipe';
+import { NavigationComponent } from './navigation/navigation.component';
 
 export function setupTranslateFactory(
   service: TranslateService): Function {
@@ -32,7 +38,8 @@ export function setupTranslateFactory(
     MytimelineComponent,
     ProgrammingskillsComponent,
     ToolknowledgeComponent,
-    TranslatePipe
+    TranslatePipe,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,10 @@ export function setupTranslateFactory(
     MatTabsModule,
     ParallaxModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     TranslateService,

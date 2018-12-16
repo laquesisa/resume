@@ -1,0 +1,16 @@
+ul {
+    position: fixed;
+    top: 34vh;
+    color: white;
+    list-style: none;
+    li {
+        margin-top: 1em;
+        a {
+            color: white;
+        }
+    }
+}
+
+li.active a {
+    text-decoration: underline;   
+}

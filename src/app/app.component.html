@@ -1,29 +1,10 @@
 <div id="top-menu" class="container-fluid">
   <div class="row">
-    <div class="col-2">
-      <ul id="navigation" (scroll)="scrollHandler($event)">
-        <li [ngClass]="activeRoute=='top-menu' ? 'active' : ''">
-          <a (click)="active('top-menu')" href="#top-menu">Welcome</a>
-        </li>
-        <li [ngClass]="activeRoute=='aboutme' ? 'active' : ''">
-          <a (click)="active('aboutme')" href="#aboutme">About me</a>
-        </li>
-        <li [ngClass]="activeRoute=='mytimeline' ? 'active' : ''">
-          <a (click)="active('mytimeline')" href="#mytimeline">My Timeline</a>
-        </li>
-        <li [ngClass]="activeRoute=='programmingskills' ? 'active' : ''">
-          <a (click)="active('programmingskills')" href="#programmingskills">Programming Skills</a>
-        </li>
-        <li [ngClass]="activeRoute=='toolknowledge' ? 'active' : ''">
-          <a (click)="active('toolknowledge')" href="#toolknowledge">Tool Knowledge</a>
-        </li>
-        <li [ngClass]="activeRoute=='contact' ? 'active' : ''">
-          <a (click)="active('contact')" href="#contact">Contact me</a>
-        </li>
-      </ul>
+    <div class="col-xl-2 col-sm-0">
+      <app-navigation></app-navigation>
     </div>
-    <div class="col-10" style="padding: 0;">
-      <div class="row, content">
+    <div class="col-xl-10 col-sm-12" style="padding: 0;">
+      <div class="row content">
         <div parallax id="container" class="background">
           <div class="layer">
             <div class="language-toggler">
@@ -32,22 +13,25 @@
                 {{ 'GERMAN' | translate }}
               </mat-slide-toggle>
             </div>
-            <h1>
+            <h1 class="mat-h2">
               {{ 'TITLE' | translate }}
             </h1>
             <p>placeholder for a picture of myself</p>
-            <h2>
-              - {{surname | uppercase}} {{lastname | uppercase}}
-              <br /> {{ 'SUBTITLE' | translate }}
+            <h2 class="mat-h3">
+              {{surname | uppercase}} {{lastname | uppercase}}
+              - {{ 'SUBTITLE' | translate }}
             </h2>
-            <h3>Switzerland</h3>
-            <button mat-flat-button color="accent">{{ 'CONTACTBUTTON' | translate }}</button>
+            <h3 class="mat-h3">{{ 'COUNTRY' | translate }}</h3>
             <app-aboutme></app-aboutme>
+            <mat-divider class="margin"></mat-divider>
             <app-mytimeline></app-mytimeline>
+            <mat-divider class="margin"></mat-divider>
             <app-programmingskills></app-programmingskills>
+            <mat-divider class="margin"></mat-divider>
             <app-toolknowledge></app-toolknowledge>
+            <mat-divider class="margin"></mat-divider>
             <app-contact></app-contact>
-            <p>{{ 'SITEINFORMATION' | translate }}</p>
+            <p class="mat-body">{{ 'SITEINFORMATION' | translate }}</p>
           </div>
         </div>
       </div>

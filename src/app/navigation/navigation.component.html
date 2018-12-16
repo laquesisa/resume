@@ -1,0 +1,20 @@
+<ul id="navigation" (scroll)="scrollHandler($event)">
+  <li [ngClass]="activeRoute=='top-menu' ? 'active' : ''">
+    <a (click)="active('top-menu')" href="#top-menu">Welcome</a>
+  </li>
+  <li [ngClass]="activeRoute=='aboutme' ? 'active' : ''">
+    <a (click)="active('aboutme')" href="#aboutme">About me</a>
+  </li>
+  <li [ngClass]="activeRoute=='mytimeline' ? 'active' : ''">
+    <a (click)="active('mytimeline')" href="#mytimeline">My Timeline</a>
+  </li>
+  <li [ngClass]="activeRoute=='programmingskills' ? 'active' : ''">
+    <a (click)="active('programmingskills')" href="#programmingskills">Programming Skills</a>
+  </li>
+  <li [ngClass]="activeRoute=='toolknowledge' ? 'active' : ''">
+    <a (click)="active('toolknowledge')" href="#toolknowledge">Tool Knowledge</a>
+  </li>
+  <li [ngClass]="activeRoute=='contact' ? 'active' : ''">
+    <a (click)="active('contact')" href="#contact">Contact me</a>
+  </li>
+</ul>

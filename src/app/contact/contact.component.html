@@ -1,13 +1,14 @@
-<div id="contact">
+<div id="contact" style="text-align: center;">
   <p>
     {{ 'CONTACTTEXT1' | translate }}
   </p>
   <p>
-    <label>name:
-      <input [(ngModel)]="email" placeholder="yourMail" />
-    </label>
-    <input type="submit" value="Send Mail" />
+    <mat-form-field>
+      <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
   </p>
-  <button mat-flat-button color="primary">{{ 'CONTACTBUTTON' | translate }}</button>
+  <p>
+    <button mat-flat-button color="accent">{{ 'CONTACTBUTTON' | translate }}</button>
+  </p>
   <p>{{ 'CONTACTTEXT2' | translate }}</p>
 </div>
