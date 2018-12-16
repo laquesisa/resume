@@ -6,11 +6,11 @@ ul {
     li {
         margin-top: 1em;
         a {
-            color: white;
+            color: rgba(255,255,255,0.5);
         }
     }
 }
 
 li.active a {
-    text-decoration: underline;   
+    color: rgba(255,255,255,1) !important;
 }

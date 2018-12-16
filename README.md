@@ -30,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `ng build --prod --base-href “https://laquesisa.github.io/resume/”`
 `ngh`
 (https://alligator.io/angular/deploying-angular-app-github-pages/)
+
+## Timeline
+source: https://bootsnipp.com/snippets/Q0ppE

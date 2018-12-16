@@ -13,16 +13,18 @@
                 {{ 'GERMAN' | translate }}
               </mat-slide-toggle>
             </div>
-            <h1 class="mat-h2">
-              {{ 'TITLE' | translate }}
-            </h1>
-            <p>placeholder for a picture of myself</p>
-            <h2 class="mat-h3">
-              {{surname | uppercase}} {{lastname | uppercase}}
-              - {{ 'SUBTITLE' | translate }}
-            </h2>
-            <h3 class="mat-h3">{{ 'COUNTRY' | translate }}</h3>
-            <app-aboutme></app-aboutme>
+            <div class="landing">
+              <h1 class="mat-h2">
+                {{ 'TITLE' | translate | uppercase }}
+              </h1>
+              <h2 class="mat-h3">
+                {{surname | uppercase}} {{lastname | uppercase}}
+              </h2>
+              <h3 class="mat-h3">{{ 'SUBTITLE' | translate }} 
+                <br /> {{ 'COUNTRY' | translate }}</h3>
+            </div>
+            <div class="information">
+              <app-aboutme></app-aboutme>
             <mat-divider class="margin"></mat-divider>
             <app-mytimeline></app-mytimeline>
             <mat-divider class="margin"></mat-divider>
@@ -32,6 +34,7 @@
             <mat-divider class="margin"></mat-divider>
             <app-contact></app-contact>
             <p class="mat-body">{{ 'SITEINFORMATION' | translate }}</p>
+            </div>            
           </div>
         </div>
       </div>

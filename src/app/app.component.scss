@@ -1,3 +1,7 @@
+%gray-background {
+    background-color: rgb(5, 4, 4);
+}
+
 .aboutme {
     background-color: rgb(10, 32, 19);
 }
@@ -8,7 +12,7 @@
 }
 
 .background {
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/background2.jpg');
     width: 100%;
     height: 100%;
 }
@@ -21,7 +25,7 @@
 }
 
 .col-xl-2 {
-    background-color: rgba(5, 4, 4, 0.829);
+    @extend %gray-background;
 }
 
 .language-toggler {
@@ -32,4 +36,25 @@
 
 .margin {
     margin: 6em 0;
+}
+
+h1 {
+    margin-top: 30vh;
+}
+
+.landing {
+    margin-bottom: 42vh;
+    display: block;
+    //text-align: center;
+}
+
+.information {
+    //@extend %gray-background;
+    //margin-left: -3em;
+    //margin-right: -3em;
+}
+
+h2 {
+    font-size: 800%;
+    line-height: 100%;
 }

@@ -1,19 +1,51 @@
 <div id="mytimeline">
-  <h4>{{ 'HEADER2' | translate }}</h4>
-  <ul>
-    <li>2011-2017: {{ 'TIMELINENODE1' | translate }}</li>
-    <li>2015-2017: {{ 'TIMELINENODE2' | translate }}</li>
-    <li>2017-Now: {{ 'TIMELINENODE3' | translate }}
-      <ul>
-        <li>Aug17 - Jun18: {{ 'TIMELINENODE3.1' | translate }}</li>
-        <li>Jun18 - Mar19: {{ 'TIMELINENODE3.2' | translate }}</li>
-      </ul>
-    </li>
-    <li>{{ 'TIMELINENODE4' | translate }}
-      <ul>
-        <li>Aug18: {{ 'TIMELINENODE4.1' | translate }}</li>
-        <li>Okt18: {{ 'TIMELINENODE4.2' | translate }}</li>
-      </ul>
-    </li>
-  </ul>
-</div>
+  <h4 class="mat-h4">{{ 'HEADER2' | translate }}</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main-timeline8">
+          <div class="timeline">
+            <span class="timeline-icon"></span>
+            <span class="year">2011 - 2017</span>
+            <div class="timeline-content">
+              <h3 class="title">{{ 'TIMELINENODE1' | translate }}</h3>
+              <p class="description">
+              </p>
+            </div>
+          </div>
+          <div class="timeline">
+            <span class="timeline-icon"></span>
+            <span class="year">2015 - 2017</span>
+            <div class="timeline-content">
+              <h3 class="title">{{ 'TIMELINENODE2' | translate }}</h3>
+              <p class="description">
+              </p>
+            </div>
+          </div>
+          <div class="timeline">
+            <span class="timeline-icon"></span>
+            <span class="year">2017 - NOW</span>
+            <div class="timeline-content">
+              <h3 class="title">{{ 'TIMELINENODE3' | translate }}</h3>
+              <p class="description">
+                <li>Aug17 - Jun18: {{ 'TIMELINENODE3.1' | translate }}</li>
+                <li>Jun18 - Mar19: {{ 'TIMELINENODE3.2' | translate }}</li>
+              </p>
+            </div>
+          </div>
+          <div class="timeline">
+            <span class="timeline-icon"></span>
+            <span class="year">2018</span>
+            <div class="timeline-content">
+              <h3 class="title">{{ 'TIMELINENODE4' | translate }}</h3>
+              <p class="description">
+                <li>Aug18: {{ 'TIMELINENODE4.1' | translate }}</li>
+                <li>Okt18: {{ 'TIMELINENODE4.2' | translate }}</li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
