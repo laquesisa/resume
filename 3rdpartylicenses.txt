@@ -352,6 +352,10 @@ MIT
 
 @angular/material/slide-toggle
 
+@angular/material/divider
+
+@angular/material/form-field
+
 @angular/material/button
 
 @angular/core
