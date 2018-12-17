@@ -1,20 +1,20 @@
-<ul id="navigation" (scroll)="scrollHandler($event)">
+<ul id="navigation" (scroll)="scrollHandler($event)" class="animated fadeInUp delay-1s">
   <li [ngClass]="activeRoute=='top-menu' ? 'active' : ''">
-    <a (click)="active('top-menu')" href="#top-menu">Home</a>
+    <a (click)="active('top-menu');scroll('top-menu')" link="#top-menu">Home</a>
   </li>
   <li [ngClass]="activeRoute=='aboutme' ? 'active' : ''">
-    <a (click)="active('aboutme')" href="#aboutme">{{ 'HEADER1' | translate }}</a>
+    <a (click)="active('aboutme');scroll('aboutme')" link="#aboutme">{{ 'HEADER1' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='mytimeline' ? 'active' : ''">
-    <a (click)="active('mytimeline')" href="#mytimeline">{{ 'HEADER2' | translate }}</a>
+    <a (click)="active('mytimeline');scroll('mytimeline')" link="#mytimeline">{{ 'HEADER2' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='programmingskills' ? 'active' : ''">
-    <a (click)="active('programmingskills')" href="#programmingskills">{{ 'HEADER3' | translate }}</a>
+    <a (click)="active('programmingskills');scroll('programmingskills')" link="#programmingskills">{{ 'HEADER3' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='toolknowledge' ? 'active' : ''">
-    <a (click)="active('toolknowledge')" href="#toolknowledge">{{ 'HEADER4' | translate }}</a>
+    <a (click)="active('toolknowledge');scroll('toolknowledge')" link="#toolknowledge">{{ 'HEADER4' | translate }}</a>
   </li>
   <li [ngClass]="activeRoute=='contact' ? 'active' : ''">
-    <a (click)="active('contact')" href="#contact">{{ 'CONTACTBUTTON' | translate }}</a>
+    <a (click)="active('contact');scroll('contact')" link="#contact">{{ 'CONTACTBUTTON' | translate }}</a>
   </li>
 </ul>

@@ -13,7 +13,7 @@ $gray-background: rgb(5, 4, 4);
     background-image: url('../assets/background2.jpg');
     background-color: $gray-background;
     background-repeat: no-repeat;
-    width: 200%;
+    width: 100%;
 }
 
 .layer {
@@ -60,9 +60,17 @@ h2 {
     text-align: center;
 }
 
+.row {
+    margin-right: -7.3px;
+}
+
 //Media queries at the end of the document
 @media only screen and (max-width: 600px) {
     .information {
       padding: 2em 2em;
+    }
+
+    .col-sm-0 {
+        display: none;
     }
   }

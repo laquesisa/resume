@@ -18,6 +18,10 @@ export class NavigationComponent implements AfterViewChecked {
     this.activeRoute = newRoute;
   }
 
+  scroll(section: string) {
+    $(`#${section}`).get(0).scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
   ngAfterViewChecked() {
     this.topMenu = $('#top-menu');
     this.topMenuHeight = this.topMenu.outerHeight() + 15;
@@ -28,11 +32,17 @@ export class NavigationComponent implements AfterViewChecked {
   scrollHandler(event) {
     let scrollE = this.scrollElements.toArray();
     for (let element of scrollE) {
-      if (pageYOffset <= $($(element).attr('href'))[0].offsetTop) {
-        const section = $(element).attr('href').slice(1, $(element).attr('href').length);
+      if (pageYOffset <= $($(element).attr('link'))[0].offsetTop + 200) {
+        const section = $(element).attr('link').slice(1, $(element).attr('link').length);
+        if(section === 'toolknowledge'){
+          //to show conact as active at the bottom
+          if(pageYOffset > $($(element).attr('link'))[0].offsetTop - 180){
+            continue;
+          }
+        }
         this.active(section);
         // show animation of the skillbars
-        if (section === 'programmingskills') {
+        if (['programmingskills', 'toolknowledge', 'contact'].includes(section)) {
           let bars = document.getElementsByClassName('skillbar-bar');
           for (let i = 0; i < bars.length; i++) {
             bars[i].classList.add('skillbar-animation');
