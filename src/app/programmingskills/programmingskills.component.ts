@@ -13,7 +13,7 @@ export class ProgrammingskillsComponent implements OnInit {
     new KnowHow('Java', 80),
     new KnowHow('MySQL', 80),
     new KnowHow('Ruby, Ruby On Rails', 60), 
-    new KnowHow('ReactJS, ReactNative', 60), 
+    new KnowHow('ReactJS, React Native', 60), 
     new KnowHow('Angular, SCSS', 50)
   ];
   constructor() { }

@@ -3,13 +3,12 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTabsModule, MatButtonModule, MatCheckboxModule} from '@angular/material';
-import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
+import { ParallaxModule } from 'ngx-parallax';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateService } from './translate.service';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 
 import * as $ from 'jquery';
 
@@ -50,8 +49,7 @@ export function setupTranslateFactory(
     MatSlideToggleModule,
     HttpClientModule,
     MatDividerModule,
-    MatFormFieldModule,
-    MatInputModule
+    MatFormFieldModule
   ],
   providers: [
     TranslateService,

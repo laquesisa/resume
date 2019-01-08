@@ -23,6 +23,10 @@ export class AppComponent {
     this.translate.use(this.curLang);
   }
 
+  scroll(section: string) {
+    $(`#${section}`).get(0).scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
   restartAnimation() {
     let landing = $('#landing');
     let navigation = $('#navigation');

@@ -6,7 +6,6 @@ $gray-background: rgb(5, 4, 4);
 
 .content {
     color: white;
-    //text-align: center;
 }
 
 .background {
@@ -39,9 +38,7 @@ $gray-background: rgb(5, 4, 4);
 
 .landing {
     padding-top: 25vh;
-    //margin-bottom: 30vh;
     display: block;
-    //text-align: center;
 }
 
 h2 {
@@ -64,6 +61,10 @@ h2 {
     margin-right: -7.3px;
 }
 
+.arrow {
+    display: none;
+}
+
 //Media queries at the end of the document
 @media only screen and (max-width: 600px) {
     .information {
@@ -73,4 +74,19 @@ h2 {
     .col-sm-0 {
         display: none;
     }
-  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .arrow {
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 80vh;
+        right: -60px;       
+    }
+
+    .arrow:hover, .arrow:focus {
+        cursor: pointer;
+    }
+}
