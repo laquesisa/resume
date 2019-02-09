@@ -3,45 +3,47 @@
   <ul class="mytimeline">
 
     <li>
-      <div class="direction-r">
+      <div class="direction-l">
         <div class="flag-wrapper">
           <span class="flag">{{ 'TIMELINENODE1' | translate }}</span>
-          <span class="time-wrapper"><span class="time">2011 - 2017</span></span>
+          <span class="time-wrapper"><span class="time">2017 - {{ 'NOW' | translate }}</span></span>
         </div>
-        <div class="desc">{{ 'TIMELINENODE1-DESCRIPTION' | translate }}</div>
+        <div class="desc">{{ 'TIMELINENODE1-DESCRIPTION' | translate }}
+          <ul>
+            <li>Aug17 - Jun18: {{ 'TIMELINENODE1.1' | translate }}</li>
+            <li>Jun18 - Apr19: {{ 'TIMELINENODE1.2' | translate }}</li>
+          </ul>
+        </div>
       </div>
     </li>
 
     <li>
-      <div class="direction-l">
+      <div class="direction-r">
         <div class="flag-wrapper">
           <span class="flag">{{ 'TIMELINENODE2' | translate }}</span>
-          <span class="time-wrapper"><span class="time">2015 - 2017</span></span>
+          <span class="time-wrapper"><span class="time">2017 - {{ 'NOW' | translate }}</span></span>
         </div>
         <div class="desc">{{ 'TIMELINENODE2-DESCRIPTION' | translate }}</div>
       </div>
     </li>
 
     <li>
-      <div class="direction-r">
+      <div class="direction-l">
         <div class="flag-wrapper">
           <span class="flag">{{ 'TIMELINENODE3' | translate }}</span>
-          <span class="time-wrapper"><span class="time">2017 - {{ 'NOW' | translate }}</span></span>
+          <span class="time-wrapper"><span class="time">2015 - 2017</span></span>
         </div>
         <div class="desc">{{ 'TIMELINENODE3-DESCRIPTION' | translate }}</div>
       </div>
     </li>
 
     <li>
-      <div class="direction-l">
+      <div class="direction-r">
         <div class="flag-wrapper">
           <span class="flag">{{ 'TIMELINENODE4' | translate }}</span>
-          <span class="time-wrapper"><span class="time">2017 - {{ 'NOW' | translate }}</span></span>
+          <span class="time-wrapper"><span class="time">2011 - 2017</span></span>
         </div>
-        <div class="desc">{{ 'TIMELINENODE4-DESCRIPTION' | translate }}
-          <li>Aug17 - Jun18: {{ 'TIMELINENODE4.1' | translate }}</li>
-          <li>Jun18 - Mar19: {{ 'TIMELINENODE4.2' | translate }}</li>
-        </div>
+        <div class="desc">{{ 'TIMELINENODE4-DESCRIPTION' | translate }}</div>
       </div>
     </li>
   </ul>
