@@ -1,10 +1,7 @@
 <div id="contact">
   <p>
-    {{ 'CONTACTTEXT1' | translate }}
-  </p>
-  <p>
-    <a href="mailto:{{ email }}">
-      <button mat-flat-button color="accent">{{ 'CONTACTBUTTON' | translate | uppercase }}</button>
+    <a [href]="fileUrl" download="dana_shmaria_resume.pdf">
+      <button mat-flat-button color="accent">{{ 'RESUMEBUTTON' | translate | uppercase }}</button>
     </a>
   </p>
   <p class="icons">

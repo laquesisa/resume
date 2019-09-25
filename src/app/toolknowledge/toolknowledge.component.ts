@@ -10,11 +10,10 @@ import { KnowHow } from '../programmingskills/knowhow';
 export class ToolknowledgeComponent implements OnInit {
 
   tools = [
-    new KnowHow('Windows', 100), 
-    new KnowHow('Linux', 70), 
-    new KnowHow('Git', 80), 
-    new KnowHow('Jira', 80), 
-    new KnowHow('Docker', 50)
+    new KnowHow('Git', 90), 
+    new KnowHow('Docker, Cloudfoundry, Artifactory', 60),
+    new KnowHow('Windows', 100),
+    new KnowHow('Linux, macOS', 70)
   ];
   constructor() { }
 

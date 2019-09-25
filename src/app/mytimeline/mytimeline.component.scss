@@ -2,7 +2,7 @@ $timelinecol: #5db33b;
   
 .mytimeline {
   position: relative;
-  width: 660px;
+  width: 1060px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 1em 0;
@@ -43,14 +43,14 @@ $timelinecol: #5db33b;
 
 .direction-l {
   position: relative;
-  width: 300px;
+  width: 500px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 300px;
+  width: 500px;
   float: right;
 }
 
@@ -137,7 +137,8 @@ $timelinecol: #5db33b;
   display: inline;
   
   line-height: 1em;
-  font-size: 0.66666em;
+  font-size: 1em;
+  font-weight: 100;
   color: $timelinecol;
   vertical-align: middle;
 }
@@ -159,8 +160,9 @@ $timelinecol: #5db33b;
 .desc {
   margin: 1em 0.75em 0 0;
   
-  font-size: 0.77777em;
+  font-size: 1em;
   font-style: italic;
+  font-weight: 100;
   line-height: 1.5em;
 }
 
@@ -272,5 +274,16 @@ $timelinecol: #5db33b;
   .direction-r .desc {
       margin: 1em 4em 0 4em;
       color: #000;
+  }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1060px) {
+  .direction-l,
+  .direction-r {
+      width: 390px;
+  }
+
+  .mytimeline {
+    width: 840px;
   }
 }

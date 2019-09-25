@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-contact',
@@ -7,10 +6,10 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  email = 'dana.shmaria@gmail.com';
+  fileUrl;
   constructor() { }
-
   ngOnInit() {
+    this.fileUrl = `${window.location.origin}/assets/resume.pdf`;
   }
 
 }
