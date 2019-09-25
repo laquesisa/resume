@@ -37,13 +37,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Option 2: https://angular.io/guide/deployment
 
-1. Build your project using Github project name, with the Angular CLI command ng build and the options shown here: ```ng build --base-href /<project_name>/```
+1. Build your project using Github project name, with the Angular CLI command ng build and the options shown here: ```ng build --prod --output-path docs --base-href /resume/```
 
-2. When the build is complete, make a copy of dist/index.html and name it dist/404.html.
+2. When the build is complete, make a copy of docs/index.html and name it docs/404.html.
 
 3. Commit your changes and push.
 
-4. On the GitHub project page, configure it to publish from the dist folder.
+4. On the GitHub project page, configure it to publish from the docs folder.
 
 
 ### Problem with image rendering
