@@ -32,9 +32,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `ng build --prod --base-href "https://laquesisa.github.io/resume/"`
 
 `ngh`
+
 (https://alligator.io/angular/deploying-angular-app-github-pages/)
 
---> install ngx to be able to execute npm-packages
+Option 2: https://angular.io/guide/deployment
+
+1. Build your project using Github project name, with the Angular CLI command ng build and the options shown here: ```ng build --base-href /<project_name>/```
+
+2. When the build is complete, make a copy of dist/index.html and name it dist/404.html.
+
+3. Commit your changes and push.
+
+4. On the GitHub project page, configure it to publish from the dist folder.
+
 
 ### Problem with image rendering
 There's a known issue (https://github.com/angular/angular-cli/issues/9347) that the url to the images on the deployed github-page is wrong (the project-name is missed). Workaround: for deploy on gh-pages you should add the project-name into to url.
