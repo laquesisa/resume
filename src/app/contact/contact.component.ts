@@ -9,7 +9,7 @@ export class ContactComponent implements OnInit {
   fileUrl;
   constructor() { }
   ngOnInit() {
-    this.fileUrl = `${window.location.origin}/assets/resume.pdf`;
+    this.fileUrl = `${window.location.origin}/resume/assets/resume.pdf`;
   }
 
 }
